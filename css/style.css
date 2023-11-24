@@ -2,6 +2,32 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,700);
 @import url(https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700);
 @import url("https://fonts.googleapis.com/css?family=Work+Sans:400,700");
+
+:root {
+    /* --clr-main: hsl(35, 71%, 59%);
+    --clr-main-hover: hsl(35, 71%, 39%);
+    --clr-dark: hsl(218, 46%, 14%);
+    --clr-very-dark: hsl(0, 0%, 15%);
+    --clr-borders: hsla(0, 0%, 100%, 0.2);
+    --clr-light: hsl(0, 0%, 100%);
+    --clr-grayish: hsla(0, 0%, 100%, 0.6); */
+
+    /* --clr-main: #edf060;
+    --clr-main-hover: #f0803c;
+    --clr-dark: #171219;
+    --clr-very-dark: #310d20;
+    --clr-borders: #225560;
+    --clr-light: hsl(0, 0%, 100%);
+    --clr-grayish: #225560; */
+
+    --clr-main: #99d19c;
+    --clr-main-hover: #73ab84;
+    --clr-dark: #000501;
+    --clr-very-dark: hsl(0, 0%, 15%);
+    --clr-borders: #79c7c5;
+    --clr-light: hsl(0, 0%, 100%);
+    --clr-grayish: #ade1e5;
+}
 body {
     line-height: 1.7;
     font-family: "Roboto", sans-serif;
@@ -67,12 +93,12 @@ html {
 }
 
 .portfolio {
-    background: #131f33;
-    color: #fff;
+    background: var(--clr-dark);
+    color: var(--clr-light);
 }
 
 .navbar-toggle .icon-bar {
-    background: #e1a34c;
+    background: var(--clr-main);
 }
 
 input[type="email"],
@@ -91,7 +117,7 @@ input[type="text"]:focus,
 input[type="tel"]:focus {
     box-shadow: none;
     border: 0px;
-    border-bottom: 1px solid #e1a34c;
+    border-bottom: 1px solid var(--clr-main);
 }
 
 .form-control {
@@ -101,11 +127,11 @@ input[type="tel"]:focus {
 
 .form-control:focus {
     box-shadow: none;
-    border-bottom: 1px solid #e1a34c;
+    border-bottom: 1px solid var(--clr-main);
 }
 
 .text-black {
-    color: #272727;
+    color: var(--clr-very-dark);
 }
 
 .btn {
@@ -121,42 +147,42 @@ input[type="tel"]:focus {
 }
 
 .btn:hover {
-    background: #aa6f1d;
-    color: #fff;
+    background: var(--clr-main-hover);
+    color: var(--clr-light);
 }
 
 .btn-main {
-    background: #e1a34c;
-    color: #272727;
-    border-color: #e1a34c;
+    background: var(--clr-main);
+    color: var(--clr-very-dark);
+    border-color: var(--clr-main);
 }
 
 .btn-main:hover {
     background: transparent;
-    color: #fff;
-    border-color: rgba(255, 255, 255, 0.2);
+    color: var(--clr-light);
+    border-color: var(--clr-borders);
 }
 
 .btn-solid-border {
-    border-color: rgba(255, 255, 255, 0.2);
+    border-color: var(--clr-borders);
     background: transparent;
-    color: #fff;
+    color: var(--clr-light);
 }
 
 .btn-solid-border:hover {
-    border-color: #e1a34c;
-    background: #e1a34c;
+    border-color: var(--clr-main);
+    background: var(--clr-main);
 }
 
 .btn-main-border {
-    border-color: #e1a34c;
+    border-color: var(--clr-main);
     background: transparent;
-    color: #e1a34c;
+    color: var(--clr-main);
 }
 
 .btn-main-border:hover {
-    border-color: #e1a34c;
-    background: #e1a34c;
+    border-color: var(--clr-main);
+    background: var(--clr-main);
 }
 
 .btn-round {
@@ -178,18 +204,18 @@ input[type="tel"]:focus {
 }
 
 .bg-shadow {
-    background-color: #fff;
+    background-color: var(--clr-light);
     box-shadow: 0 16px 24px rgba(0, 0, 0, 0.08);
     padding: 20px;
 }
 
 .bg-gray {
-    background: #152136;
+    background: var(--clr-dark);
 }
 
 .btn-light:hover {
-    background: #e1a34c;
-    border-color: #e1a34c;
+    background: var(--clr-main);
+    border-color: var(--clr-main);
 }
 
 .section {
@@ -219,14 +245,6 @@ input[type="tel"]:focus {
 .facebook {
     background: #3b5998;
     padding: 7px 18px;
-}
-
-.googleplus {
-    background: #dd4b39;
-}
-
-.dribbble {
-    background: #ea4c89;
 }
 
 .instagram {
@@ -263,7 +281,7 @@ input[type="tel"]:focus {
 }
 
 .text-color {
-    color: #e1a34c;
+    color: var(--clr-main);
 }
 
 .letter-spacing {
@@ -311,7 +329,7 @@ a:focus {
     text-transform: capitalize;
     font-size: 18px;
     letter-spacing: 0.5px;
-    color: #fff;
+    color: var(--clr-light);
     padding: 10px 15px !important;
 }
 
@@ -319,17 +337,19 @@ a:focus {
     width: 40px;
     height: 40px;
     text-align: center;
-    color: #fff;
+    color: var(--clr-light);
     display: inline-block;
     padding-top: 8px;
-    background: rgba(255, 255, 255, 0.2);
+    background: var(--clr-borders);
     border-radius: 100%;
 }
 
 .navbar-brand .logo {
-    color: #fff;
+    color: var(--clr-light);
 }
-
+h2.logo {
+    margin: 0;
+}
 .navigation {
     transition: 0.3s ease;
     border-bottom: 1px solid transparent;
@@ -340,7 +360,7 @@ a:focus {
     top: 0;
     width: 100%;
     z-index: 9999;
-    background: #131f33 !important;
+    background: var(--clr-dark) !important;
     border-bottom: 1px solid rgba(255, 255, 255, 0.03);
 }
 
@@ -349,7 +369,7 @@ a:focus {
     content: "";
     right: -20px;
     top: 20px;
-    border: 10px solid rgba(255, 255, 255, 0.6);
+    border: 10px solid var(--clr-grayish);
     width: 100%;
     height: 100%;
 }
@@ -403,14 +423,14 @@ a:focus {
     top: 0;
     left: 0;
     height: 100%;
-    background: #e1a34c;
+    background: var(--clr-main);
     border-radius: 3px;
     transition: all 3s ease-in-out;
 }
 
 .progress-bar .percent-text {
     font-size: 62px;
-    color: #fff;
+    color: var(--clr-light);
     position: absolute;
     top: -110px;
     left: 0;
@@ -427,12 +447,12 @@ a:focus {
 }
 
 #service .card:hover {
-    border-bottom-color: #e1a34c;
+    border-bottom-color: var(--clr-main);
     background: transparent;
 }
 
 #service .card:hover h3 {
-    color: #e1a34c;
+    color: var(--clr-main);
 }
 
 .portfolio-item:before {
@@ -442,7 +462,7 @@ a:focus {
     left: 0px;
     width: 100%;
     height: 0;
-    background: rgba(225, 163, 76, 0.95);
+    background: var(--clr-main);
     transition: all 0.35s ease;
     overflow: hidden;
     z-index: 1;
@@ -462,12 +482,12 @@ a:focus {
 }
 
 .portfolio-item p {
-    color: #fff;
+    color: var(--clr-light);
 }
 
 .portfolio-item i {
     font-size: 50px;
-    color: #131f33;
+    color: var(--clr-dark);
 }
 
 .portfolio-item:hover:before {
@@ -489,8 +509,8 @@ a:focus {
 }
 
 #portfolio .owl-theme .owl-nav [class*="owl-"] {
-    color: #131f33;
-    background: #e1a34c;
+    color: var(--clr-dark);
+    background: var(--clr-main);
 }
 
 #portfolio .owl-theme .owl-nav {
@@ -511,13 +531,13 @@ a:focus {
 
 .portfolio-sidebar ul li span {
     font-size: 13px;
-    color: #fff;
+    color: var(--clr-light);
     opacity: 0.9;
     font-weight: 600;
 }
 
 .bg-primary {
-    background: #e1a34c !important;
+    background: var(--clr-main) !important;
 }
 
 .testimonial-slider .testimonial-content {
@@ -539,12 +559,12 @@ a:focus {
 }
 
 .testimonial-slider .testimonial-item .media img {
-    border: 5px solid rgba(255, 255, 255, 0.2);
+    border: 5px solid var(--clr-borders);
     width: 90px;
 }
 
 .slick-dots li button::before {
-    color: #fff;
+    color: var(--clr-light);
 }
 
 .slick-dots {
@@ -566,7 +586,7 @@ a:focus {
 }
 
 .contact-form .form-control:hover {
-    border-bottom: 1px solid #e1a34c;
+    border-bottom: 1px solid var(--clr-main);
 }
 
 .blog-item .blog-item-meta {
@@ -580,15 +600,15 @@ a:focus {
 }
 
 .blog-item a {
-    color: #fff;
+    color: var(--clr-light);
 }
 
 .blog-item a:hover {
-    color: #e1a34c;
+    color: var(--clr-main);
 }
 
 .blog-item a.learn-more {
-    color: #e1a34c;
+    color: var(--clr-main);
     letter-spacing: 2px;
 }
 
@@ -596,33 +616,33 @@ a:focus {
     color: rgba(255, 255, 255, 0.8);
     padding: 2px 10px;
     display: inline-block;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid var(--clr-borders);
     margin-bottom: 5px;
     text-transform: capitalize;
     font-size: 14px;
 }
 
 .blog-navigation a {
-    color: #fff;
+    color: var(--clr-light);
     display: inline-block;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid var(--clr-borders);
     padding: 6px 25px;
 }
 
 .comment-form .form-control,
 .subscribe .form-control {
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid var(--clr-borders);
 }
 
 .post-share a {
-    color: #fff;
+    color: var(--clr-light);
     display: inline-block;
     padding: 6px 25px;
     border-radius: 2px;
 }
 
 .footer-socials li a {
-    color: #fff;
+    color: var(--clr-light);
     text-transform: capitalize;
     letter-spacing: 1px;
     font-size: 22px;
@@ -630,7 +650,7 @@ a:focus {
 }
 
 .footer-socials li a:hover {
-    color: #e1a34c;
+    color: var(--clr-main);
 }
 
 .footer {
@@ -638,7 +658,7 @@ a:focus {
 }
 
 .footer p {
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--clr-grayish);
 }
 
 .backtop {
@@ -646,8 +666,8 @@ a:focus {
     height: 40px;
     text-align: center;
     padding-top: 8px;
-    color: #272727;
-    background: #e1a34c;
+    color: var(--clr-very-dark);
+    background: var(--clr-main);
     display: inline-block;
     position: fixed;
     content: "";
@@ -657,7 +677,7 @@ a:focus {
 }
 
 .backtop:hover {
-    color: #fff;
+    color: var(--clr-light);
 }
 
 .reveal {
@@ -669,10 +689,10 @@ a:focus {
 /*=== MEDIA QUERY ===*/
 @media (max-width: 768px) {
     .navbar-toggler {
-        background: #fff !important;
+        background: var(--clr-light) !important;
     }
     .navigation {
-        background: #131f33 !important;
+        background: var(--clr-dark) !important;
     }
     .text-lg {
         font-size: 68px;
@@ -686,10 +706,10 @@ a:focus {
 
 @media (max-width: 480px) {
     .navigation {
-        background: #131f33 !important;
+        background: var(--clr-dark) !important;
     }
     .navbar-toggler {
-        background: #fff !important;
+        background: var(--clr-light) !important;
     }
     .text-lg {
         font-size: 52px;
@@ -727,7 +747,7 @@ a:focus {
 
 @media (max-width: 400px) {
     .navigation {
-        background: #131f33 !important;
+        background: var(--clr-dark) !important;
     }
     .text-lg {
         font-size: 52px;
@@ -752,7 +772,7 @@ a:focus {
         font-size: 60px !important;
     }
     .navbar-toggler {
-        background: #fff !important;
+        background: var(--clr-light) !important;
     }
     .py-7 {
         padding-top: 6rem !important;
