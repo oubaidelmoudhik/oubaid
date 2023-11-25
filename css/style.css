@@ -685,6 +685,23 @@ h2.logo {
     cursor: pointer;
     opacity: 1;
 }
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    text-align: center;
+}
+.contact-info li {
+    background-color: var(--clr-dark);
+    border: 1px solid var(--clr-borders);
+}
+.contact-info a {
+    color: var(--clr-light);
+    font-weight: 700;
+}
+.contact-info li:hover {
+    background-color: var(--clr-grayish);
+}
 
 /*=== MEDIA QUERY ===*/
 @media (max-width: 768px) {
