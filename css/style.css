@@ -802,5 +802,12 @@ h2.logo {
         right: -6px;
     }
 }
-
+@media (width < 480px) {
+    .navbar-btn-mobile {
+        background-color: var(--clr-dark) !important;
+    }
+    .navbar-btn-mobile span {
+        color: var(--clr-light);
+    }
+}
 /*# sourceMappingURL=maps/style.css.map */
